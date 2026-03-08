@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Discord Checker</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Discord Username Checker</h1>
+
+<textarea id="usernames" placeholder="1 username per line"></textarea>
+
+<br>
+
+<input type="file" id="file">
+
+<br>
+
+<button onclick="startCheck()">Start Checking</button>
+
+<a href="/download">Download Available</a>
+
+<div class="stats">
+
+<p>Checked: <span id="checked">0</span></p>
+<p>Available: <span id="available">0</span></p>
+<p>Taken: <span id="taken">0</span></p>
+<p>Speed: <span id="speed">0</span> checks/sec</p>
+
+</div>
+
+<div id="results"></div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
